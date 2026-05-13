@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Kalen</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 48px 24px 80px;
+    }
+
+    .wrap {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #555;
+      margin-top: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      color: #555;
+      border-bottom: 2px solid #e8e8e8;
+      padding: 8px 10px 8px 0;
+    }
+
+    td {
+      color: #333;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 8px 10px 8px 0;
+      vertical-align: top;
+    }
+
+    .badge-no {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      background: #f3f3f3;
+      color: #888;
+      border-radius: 4px;
+      padding: 1px 7px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 60px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── ESPAÑOL ──────────────────────────────────────────────────────────── -->
+
+  <p class="app-name">Kalen</p>
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Última actualización: 13 de mayo de 2025</p>
+
+  <h2>1. Responsable</h2>
+  <p>
+    <strong>Desarrollador:</strong> Martín Yordanov<br>
+    <strong>Contacto:</strong> <a href="mailto:martin192006yor@gmail.com">martin192006yor@gmail.com</a>
+  </p>
+
+  <h2>2. Datos que recogemos</h2>
+  <table>
+    <thead>
+      <tr><th>Dato</th><th>Finalidad</th><th>Almacenamiento</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dirección de email</td><td>Autenticación mediante OTP</td><td>Supabase (nube)</td></tr>
+      <tr><td>Nombre de usuario</td><td>Personalización de la interfaz</td><td>Dispositivo local</td></tr>
+      <tr><td>Eventos del calendario<br><span style="color:#999;font-size:13px">título, fecha, hora, duración, categoría, notas, ubicación</span></td><td>Funcionalidad principal de la app</td><td>Supabase (nube) + caché local</td></tr>
+      <tr><td>Contador de uso de IA</td><td>Control del límite mensual de consultas</td><td>Supabase (nube) + dispositivo local</td></tr>
+      <tr><td>Preferencias de notificaciones</td><td>Envío de recordatorios de eventos</td><td>Dispositivo local</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Datos temporales (solo en sesión)</h2>
+  <p>
+    El historial de conversaciones con la IA existe únicamente en memoria mientras la app está abierta.
+    <strong>No se almacena</strong> en nuestros servidores ni en el dispositivo una vez cerrada la sesión.
+    Los mensajes se transmiten a Anthropic para generar la respuesta (ver sección 5).
+  </p>
+
+  <h2>4. Lo que NO recogemos</h2>
+  <p>Kalen <strong>nunca</strong> accede ni recoge:</p>
+  <ul>
+    <li>Localización / GPS</li>
+    <li>Contactos del teléfono</li>
+    <li>Cámara o micrófono</li>
+    <li>Fotos o archivos</li>
+    <li>Datos de tarjeta de crédito o pago (gestionados íntegramente por Google Play y RevenueCat)</li>
+  </ul>
+
+  <h2>5. Terceros</h2>
+  <table>
+    <thead>
+      <tr><th>Servicio</th><th>Función</th><th>Política</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase</td>
+        <td>Base de datos y autenticación</td>
+        <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>Gestión de suscripciones y pagos</td>
+        <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Anthropic</td>
+        <td>Procesamiento de IA — los mensajes se transmiten para generar respuestas pero <strong>Anthropic no los almacena</strong> con fines de entrenamiento bajo nuestra configuración de API</td>
+        <td><a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Google Play</td>
+        <td>Distribución y procesamiento de pagos</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Edad mínima</h2>
+  <p>
+    Kalen no está dirigida a menores de 13 años. No recogemos conscientemente datos de menores de esa edad.
+    Si eres padre o tutor y crees que tu hijo ha proporcionado datos, contáctanos para eliminarlos.
+  </p>
+
+  <h2>7. Tus derechos y eliminación de datos</h2>
+  <p>
+    Puedes solicitar la eliminación de todos tus datos (cuenta, eventos, historial de uso) en cualquier momento
+    enviando un email a <a href="mailto:martin192006yor@gmail.com">martin192006yor@gmail.com</a> con el asunto
+    <em>"Eliminación de datos — Kalen"</em>. Procesaremos la solicitud en un plazo máximo de 30 días.
+  </p>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>
+    Cualquier cambio significativo se notificará dentro de la app. La fecha de última actualización
+    en la parte superior de esta página siempre refleja la versión vigente.
+  </p>
+
+  <hr>
+
+  <!-- ── ENGLISH ───────────────────────────────────────────────────────────── -->
+
+  <p class="app-name">Kalen</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 13, 2025</p>
+
+  <h2>1. Developer</h2>
+  <p>
+    <strong>Developer:</strong> Martín Yordanov<br>
+    <strong>Contact:</strong> <a href="mailto:martin192006yor@gmail.com">martin192006yor@gmail.com</a>
+  </p>
+
+  <h2>2. Data we collect</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Purpose</th><th>Storage</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Email address</td><td>OTP-based authentication</td><td>Supabase (cloud)</td></tr>
+      <tr><td>Username</td><td>UI personalisation</td><td>Local device</td></tr>
+      <tr><td>Calendar events<br><span style="color:#999;font-size:13px">title, date, time, duration, category, notes, location</span></td><td>Core app functionality</td><td>Supabase (cloud) + local cache</td></tr>
+      <tr><td>AI usage counter</td><td>Monthly query limit enforcement</td><td>Supabase (cloud) + local device</td></tr>
+      <tr><td>Notification preferences</td><td>Sending event reminders</td><td>Local device</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Temporary data (session only)</h2>
+  <p>
+    The AI conversation history exists only in memory while the app is open.
+    It is <strong>not stored</strong> on our servers or on the device once the session ends.
+    Messages are transmitted to Anthropic to generate responses (see section 5).
+  </p>
+
+  <h2>4. What we do NOT collect</h2>
+  <p>Kalen <strong>never</strong> accesses or collects:</p>
+  <ul>
+    <li>Location / GPS</li>
+    <li>Phone contacts</li>
+    <li>Camera or microphone</li>
+    <li>Photos or files</li>
+    <li>Credit card or payment data (handled entirely by Google Play and RevenueCat)</li>
+  </ul>
+
+  <h2>5. Third-party services</h2>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Role</th><th>Policy</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase</td>
+        <td>Database and authentication</td>
+        <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>Subscription and payment management</td>
+        <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Anthropic</td>
+        <td>AI processing — messages are transmitted to generate responses but <strong>Anthropic does not store them</strong> for training purposes under our API configuration</td>
+        <td><a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Google Play</td>
+        <td>Distribution and payment processing</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Minimum age</h2>
+  <p>
+    Kalen is not directed at children under 13. We do not knowingly collect data from children under that age.
+    If you are a parent or guardian and believe your child has provided personal data, please contact us to have it removed.
+  </p>
+
+  <h2>7. Your rights and data deletion</h2>
+  <p>
+    You may request deletion of all your data (account, events, usage history) at any time by emailing
+    <a href="mailto:martin192006yor@gmail.com">martin192006yor@gmail.com</a> with the subject line
+    <em>"Data deletion — Kalen"</em>. We will process your request within 30 days.
+  </p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>
+    Any significant changes will be notified within the app. The last-updated date at the top of this page
+    always reflects the current version.
+  </p>
+
+</div>
+</body>
+</html>
